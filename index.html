@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LUX MED - kalkulator oferty</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+     </head>
+  <body>
+    <header>
+      <h1>Kalkulator oferty LUX MED</h1>
+    </header>
+
+    <main class="main-ogolna">
+      <section class=" suma_planow">
+        <div class="div-suma_planow--suma">Suma:</div>
+        <div class="div-suma_planow--suma">0 PLN</div>
+      </section>
+     <!-- Plany Benefit PODSTAWOWY-->
+      <section class="mobile-benefitplan--section">
+      <h2>BENEFITPLAN PODSTAWOWY</h2>
+        <!-- Plan PODSTAWOWY - infywidualny-->
+        <div class="div-bnenefitplan--naglowek">
+          <div class="div-benefitplan--plan">Indywidualny bez dopłatą</div>
+          <div class="div-benefitplan--plan">
+            <p>Ilość pakietów:</p>
+            <input
+              type="number"
+              id="pakietBezDoplatyPodstawowyIndywidualny"
+              class="div-benefitplan--input"
+              onchange="zbierzIloscPaktietow()"
+            />
+          </div>
+          <div class="div-benefitplan--plan bez-doplaty--js">0 PLN</div>
+        </div>
+        <!-- PODSTAWOWY indywidualny z doplata-->
+        <div class="div-bnenefitplan--naglowek">
+           <div class="div-benefitplan--plan">Indywidualny z dopłaty</div>
+          <div class="div-benefitplan--plan">
+            <p>Ilość pakietów:</p>
+            <input
+              type="number"
+              id="pakietZDoplataPodstawowyIndywidualny"
+              class="div-benefitplan--input"
+              onchange="zbierzIloscPaktietow()"
+            />
+          </div>
+          <div class="div-benefitplan--plan z-doplaty--js">0 PLN</div>
+        </div>
+
+        <!-- Plan podstawowy rodzinny-->
+
+        <div class="div-bnenefitplan--naglowek">
+          <div class="div-benefitplan--plan">Rodzinny bez dopłaty</div>
+          <div class="div-benefitplan--plan">
+            <p>Ilość pakietów:</p>
+            <input
+              type="number"
+              id="pakietBezDoplatyPodstawowyRodzinny"
+              class="div-benefitplan--input"
+            />
+          </div>
+          <div class="div-benefitplan--plan bez-doplaty--js">0 PLN</div>
+        </div>
+
+        <!-- PODSTAWOWY RODZINNY  z dopalta-->
+        <div class="div-bnenefitplan--naglowek">
+          <div class="div-benefitplan--plan">Rodziny z dopłaty</div>
+          <div class="div-benefitplan--plan">
+            <p>Ilość pakietów:</p>
+            <input
+              type="number"
+              id="pakietZDoplataPodstawowyRodzinny"
+              class="div-benefitplan--input"
+            />
+          </div>
+          <div class="div-benefitplan--plan z-doplaty--js">0 PLN</div>
+        </div>
+      </section>
+           <section class="mobile-benefitplan--section">
+        <h2>BENEFITPLAN ROZSZERZONY</h2>
+        <!-- Plan Rozszerzony - infywidualny-->
+        <div class="div-bnenefitplan--naglowek plan--rozszerzony">
+          <div class="div-benefitplan--plan">Indywidualny bez dopłaty</div>
+          <div class="div-benefitplan--plan">
+            <p>Ilość pakietów:</p>
+            <input
+              type="number"
+              id="pakietBezDoplatyRozszerzonyIndywidualny"
+              class="div-benefitplan--input"
+            />
+          </div>
+
+           <!-- Plan Rozszerzony - infywidualny z doplata -->
+          <div class="div-benefitplan--plan bez-doplaty--js">0 PLN</div>
+        </div>
+        <div class="div-bnenefitplan--naglowek plan--rozszerzony">
+          <div class="div-benefitplan--plan">Indywidualny z dopłatą</div>
+          <div class="div-benefitplan--plan">
+            <p>Ilość pakietów:</p>
+            <input
+              type="number"
+              id="pakietZDoplataRozszerzonyIndywidualny"
+              class="div-benefitplan--input"
+            />
+          </div>
+          <div class="div-benefitplan--plan bez-doplaty--js">0 PLN</div>
+          </div>
+
+        <!-- Plan Rozszerzony rodzinny-->
+
+
+        <div class="div-bnenefitplan--naglowek plan--rozszerzony">
+          <div class="div-benefitplan--plan">Rodzinny bez dopłaty</div>
+          <div class="div-benefitplan--plan">
+            <p>Ilość pakietów:</p>
+            <input
+              type="number"
+              id="pakietBezDoplatyRozszerzonyRodzinny"
+              class="div-benefitplan--input"
+            />
+          </div>
+          <div class="div-benefitplan--plan bez-doplaty--js">0 PLN</div>
+        </div>
+         <!-- Plan Rozszerzony rodzinny z doplata -->
+        <div class="div-bnenefitplan--naglowek plan--rozszerzony">
+              <div class="div-benefitplan--plan">Rodzinny z dopłatą</div>
+          <div class="div-benefitplan--plan">
+            <p>Ilość pakietów:</p>
+            <input
+              type="number"
+              id="pakietZDoplataRozszerzonyRodzinny"
+              class="div-benefitplan--input"
+            />
+          </div>
+          <div class="div-benefitplan--plan bez-doplaty--js">0 PLN</div>
+          </div>
+        
+      </section>
+            <!-- Plany Benefit Kompleksowy-->
+      <section class="mobile-benefitplan--section">
+        <h2>BENEFITPLAN KOMPLEKSOWY</h2>
+        <!-- Plan kompleksowy - infywidualny-->
+        <div class="div-bnenefitplan--naglowek">
+          <div class="div-benefitplan--plan">Indywidualny bez dopłaty</div>
+          <div class="div-benefitplan--plan"><p>Ilość pakietów:</p>
+            <input
+              type="number"
+              id="pakietBezDoplatyKompleksowyIndywidualny"
+              class="div-benefitplan--input"
+            />
+          </div>
+          <div class="div-benefitplan--plan bez-doplaty--js">0 PLN</div>
+        </div>
+
+        <!-- Plan rodzinny-->
+        <div class="div-bnenefitplan--naglowek">
+          <div class="div-benefitplan--plan">Rodzinny bez dopłatty</div>
+          <div class="div-benefitplan--plan"><p>Ilość pakietów:</p>
+            <input
+              type="number"
+              id="pakietBezDoplatyKompleksowyRodzinny"
+              class="div-benefitplan--input"
+            />
+          </div>
+          <div class="div-benefitplan--plan bez-doplaty--js">0 PLN</div>
+          </section>
+    
+    </main>
+  </body>
+</html>
