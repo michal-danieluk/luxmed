@@ -71,7 +71,7 @@ h2 {
 .div-benefitplan--input {
   width: 75%;
   background-color: lawngreen;
-  text-align: right;
+  text-align: center;
 }
 
 .plan--rozszerzony {
@@ -213,7 +213,7 @@ h2 {
   .div-benefitplan--input {
     width: 75%;
     background-color: lawngreen;
-    text-align: right;
+    text-align: center;
   }
 
   .plan--rozszerzony {
