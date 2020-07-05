@@ -42,29 +42,41 @@ function zbierzIloscPaktietow() {
     pakietBezDoplatyPodstawowyIndywidualny
   ) => {
     if (pakietBezDoplatyPodstawowyIndywidualny <= 10) {
-      var netto = "57";
+      var netto = (57);
       var brutto = "58,5";
+      var cenypakietow = {
+        netto: (57),
+        brutto: (58.5),
+      };
+      let bruttoWartosc =
+        pakietBezDoplatyPodstawowyIndywidualny * cenypakietow.brutto;
       return (
         "<p>Netto " +
         pakietBezDoplatyPodstawowyIndywidualny * netto +
+        " PLN <br>Brutto " +
+        bruttoWartosc +
         " PLN</p>"
       );
     }
     if (pakietBezDoplatyPodstawowyIndywidualny <= 20) {
       netto = 54;
-      brutto = "55,5";
+      brutto = (55.5);
       return (
         "<p>Netto " +
         pakietBezDoplatyPodstawowyIndywidualny * netto +
+        " PLN <br>Brutto " +
+        pakietBezDoplatyPodstawowyIndywidualny * brutto +
         " PLN</p>"
       );
     }
     if (pakietBezDoplatyPodstawowyIndywidualny >= 21) {
       netto = 52;
-      brutto = "53,5";
+      brutto = (53.5);
       return (
         "<p>Netto " +
         pakietBezDoplatyPodstawowyIndywidualny * netto +
+        " PLN <br>Brutto " +
+        pakietBezDoplatyPodstawowyIndywidualny * brutto +
         " PLN</p>"
       );
     }
